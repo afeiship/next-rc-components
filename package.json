@@ -1,6 +1,6 @@
 {
   "name": "@jswork/pinia-plugin-watch",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The easiest way to watch for your Pinia State.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
