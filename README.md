@@ -15,7 +15,15 @@ npm install @jswork/pinia-plugin-watch
 ```js
 import piniaPluginWatch from '@jswork/pinia-plugin-watch';
 
-// usage goes here.
+// Vue app.
+export function createApp() {
+  const app = createSSRApp(App);
+  const pinia = createPinia();
+
+  pinia.use(PiniaStateTree);
+  pinia.use(piniaPluginWatch);
+  //...
+}
 ```
 
 ## license
