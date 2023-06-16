@@ -15,7 +15,7 @@ npm install @jswork/pinia-plugin-watch
 ```js
 import piniaPluginWatch from '@jswork/pinia-plugin-watch';
 
-// Vue app.
+// App
 export function createApp() {
   const app = createSSRApp(App);
   const pinia = createPinia();
@@ -24,6 +24,19 @@ export function createApp() {
   pinia.use(piniaPluginWatch);
   //...
 }
+
+// stores/auth.js
+import { defineStore } from "pinia";
+
+export default defineStore("auth", {
+  state: () => ({ profile: null, other: null }),
+  watch: {
+    profile: (newValue, oldValue) => {
+      if (newValue) console.log("profile changed", newValue);
+      else console.log("profile removed", oldValue);
+    },
+  },
+});
 ```
 
 ## license
