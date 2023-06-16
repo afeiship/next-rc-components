@@ -15,7 +15,7 @@ npm install @jswork/pinia-plugin-watch
 ```js
 import piniaPluginWatch from '@jswork/pinia-plugin-watch';
 
-// App
+// ======== main.js  ======
 export function createApp() {
   const app = createSSRApp(App);
   const pinia = createPinia();
@@ -25,7 +25,7 @@ export function createApp() {
   //...
 }
 
-// stores/auth.js
+// ======== stores/auth.js ======
 import { defineStore } from "pinia";
 
 export default defineStore("auth", {
