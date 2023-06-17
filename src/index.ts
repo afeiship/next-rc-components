@@ -1,17 +1,17 @@
+import nx from '@jswork/next';
+import { watch } from 'vue';
+
 declare var wx: any;
 
 const PiniaPluginWatch = (context) => {
   const { store, options } = context;
-  const watchers = options.watch || {};
-  store.$subscribe((mutation) => {
-    const events = mutation.events || [];
-    const targetEvents = Array.isArray(events) ? events : [events];
-    Object.keys(watchers).forEach((key) => {
-      const target = targetEvents.find((event) => event.key === key);
-      if (target) {
-        const { newValue, oldValue } = target;
-        watchers[key].call(store, newValue, oldValue);
-      }
+  const { watch: watchers, ...opts } = options;
+  const keys = Object.keys(watchers);
+
+  keys.forEach((key) => {
+    watch(() => nx.get(store.$state, key), watchers[key], {
+      deep: true,
+      ...opts,
     });
   });
 };
