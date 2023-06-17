@@ -3,7 +3,7 @@ declare var wx: any;
 const PiniaPluginWatch = (context) => {
   const { store, options } = context;
   const watchers = options.watch || {};
-  store.$subscribe((mutation, state) => {
+  store.$subscribe((mutation) => {
     const events = mutation.events;
     if (!events) return;
     const targetEvents = Array.isArray(events) ? events : [events];
