@@ -4,8 +4,7 @@ const PiniaPluginWatch = (context) => {
   const { store, options } = context;
   const watchers = options.watch || {};
   store.$subscribe((mutation) => {
-    const events = mutation.events;
-    if (!events) return;
+    const events = mutation.events || [];
     const targetEvents = Array.isArray(events) ? events : [events];
     Object.keys(watchers).forEach((key) => {
       const target = targetEvents.find((event) => event.key === key);
