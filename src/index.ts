@@ -6,6 +6,8 @@ declare var wx: any;
 const PiniaPluginWatch = (context) => {
   const { store, options } = context;
   const { watch: watchers, ...opts } = options;
+
+  if (!watchers) return;
   const keys = Object.keys(watchers);
 
   keys.forEach((key) => {
