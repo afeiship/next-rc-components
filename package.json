@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-rc-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Global react components for next.",
   "homepage": "https://js.work",
   "files": [
@@ -65,6 +65,13 @@
     "component",
     "next",
     "rc",
-    "react"
+    "react",
+    "if",
+    "ife",
+    "list",
+    "rcm",
+    "rsm",
+    "switch",
+    "template"
   ]
 }
