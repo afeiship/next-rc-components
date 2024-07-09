@@ -13,9 +13,26 @@ yarn add @jswork/next-rc-components
 
 ## usage
 ```js
+// src/bootstrap.ts
 import '@jswork/next-rc-components';
 
-//DOCS here!
+// src/pages/index.tsx
+<nx.$rc.ife only value={ife} as="div" asProps={{ className: 'abc' }}>
+  <div className="debug-red p-5.5 text-center">
+    <h4>Debug info for $rc.ife</h4>
+    <a href="https://vitejs.dev" target="_blank">
+      <img src={reactLogo} className="logo" alt="Vite logo" />
+    </a>
+  </div>
+</nx.$rc.ife>
+
+<nx.$rc.list
+  items={['a', 'b', 'c']}
+  as="ul"
+  template={({ item }) => {
+    return <li key={item}>{item}</li>;
+  }}
+/>
 ```
 
 ## license
