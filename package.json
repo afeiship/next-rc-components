@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-rc-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Global react components for next.",
   "homepage": "https://js.work",
   "files": [
@@ -26,6 +26,7 @@
     "@jswork/gulp-registry": "^1.0.45",
     "@jswork/next": "^1.2.2",
     "@types/jest": "^29.5.12",
+    "@types/react": "^18.3.3",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
@@ -59,5 +60,11 @@
     "@jswork/react-if-else": "^1.2.11",
     "@jswork/react-list": "^1.2.7",
     "@jswork/react-status-manager": "^1.2.1"
-  }
+  },
+  "keywords": [
+    "component",
+    "next",
+    "rc",
+    "react"
+  ]
 }
