@@ -4,7 +4,7 @@ import nx from '@jswork/next';
 import ife from '@jswork/react-if-else';
 import rcm from '@jswork/react-condition-manager';
 import rsm from '@jswork/react-status-manager';
-import list from '@jswork/react-status-manager';
+import list from '@jswork/react-list';
 
 
 nx.$rc = { ife, rcm, rsm, list };
