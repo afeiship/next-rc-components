@@ -24,7 +24,7 @@
     "@babel/preset-env": "^7.20.2",
     "@jswork/gulp-pkg-header": "^1.0.11",
     "@jswork/gulp-registry": "^1.0.45",
-    "@jswork/next": "^1.2.9",
+    "@jswork/next": "^1.2.11",
     "@types/jest": "^29.5.12",
     "@types/react": "^18.3.3",
     "del": "^6.0.0",
@@ -56,10 +56,10 @@
     ]
   },
   "dependencies": {
-    "@jswork/react-condition-manager": "^1.2.3",
-    "@jswork/react-if-else": "^1.2.13",
-    "@jswork/react-list": "^1.3.2",
-    "@jswork/react-status-manager": "^1.2.2"
+    "@jswork/react-condition-manager": "^1.3.3",
+    "@jswork/react-if-else": "^1.3.1",
+    "@jswork/react-list": "^1.4.1",
+    "@jswork/react-status-manager": "^1.3.1"
   },
   "keywords": [
     "component",
